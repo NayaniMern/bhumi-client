@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle"
+import "bootstrap-icons/font/bootstrap-icons.css";
+import Header from "./BHUMI/Header";
+
+
+
+
+import Footer from "./BHUMI/Footer";
+import Routing from "./BHUMI/Routing";
+import { createContext, useState } from "react";
+
+export const loginStatus = createContext();
+
+
 
 function App() {
+  const [token, setToken] = useState("");
+ 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container-fluid p-0">
+      <loginStatus.Provider value={[token, setToken]}>
+ 
+    
+     <Header/>
+     <Routing/>
+     <Footer/>
+     </loginStatus.Provider>
+
     </div>
   );
 }

@@ -1,0 +1,339 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  background-color: #fbc02d;
+  box-shadow: 10px 20px 40px #8d6e63;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  row-gap: 0px;
+  column-gap: 35px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 17px;
+
+  padding: 10px 5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #873618;
+  transition: 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: black;
+}
+
+.navbar-nav .nav-link.active {
+  color: black;
+  font-weight: 800;
+}
+
+/*Footer Section*/
+
+.footer-section {
+  background: #2e7d32;
+  color: #fff;
+}
+
+.footer-logo {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-title {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: rgb(92, 6, 6);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.footer-links li:hover {
+  color: #c5ffbc;
+  padding-left: 4px;
+}
+
+.footer-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e6ffe3;
+}
+
+hr {
+  border-color: rgba(236, 28, 28, 0.797);
+}
+/*About*/
+.about-hero {
+  height: 60vh;
+  width: 100%;
+  background-image: url(assets/About.png);
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.about-hero .overlay {
+  background: rgba(0, 100, 0, 0.5);
+  padding: 50px;
+  text-align: center;
+  border-radius: 10px;
+}
+.about-hero .overlay p{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+/*Report*/
+
+.report-hero {
+  height: 60vh;
+  width: 100%;
+  background-image: url(assets/report1.jpg);
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.report-hero .overlay {
+  background: rgba(0, 100, 0, 0.5);
+  padding: 50px;
+  text-align: center;
+  border-radius: 10px;
+}
+.report-hero .overlay p{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.report-main {
+ 
+  margin-top: 20px;
+}
+.report-main .content {
+  box-shadow: 0 4px 15px #89ac46;
+  padding: 50px;
+}
+.report-main h1 {
+  text-align: center;
+
+  margin-bottom: 60px;
+  color: brown;
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+
+
+
+.certificate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  width: 100%;
+ 
+}
+
+
+.report {
+  background: #ffffff;
+  padding: 90px;
+  width: 100%;
+ background-image: url(assets/report.jpg);
+ background-position: center;
+ background-size: cover;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  border: 1px solid #e0e0e0;
+}
+
+
+.report h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #2d5a27; 
+  margin-bottom: 20px;
+}
+
+
+.report p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+  font-weight: 500;
+}
+
+
+.report span {
+  font-weight: 600;
+  color: #111;
+  margin-left: 6px;
+}
+
+
+
+
+
+
+.certificate h2{
+  color: #085905;
+  background: #c5ffbc;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.addcertificate button,.addservice button{
+    width: 100%;
+  height: 50px;
+  border: 1px solid rgb(41, 15, 12);
+  margin-bottom: 10px;
+  background-color: #65be70;
+  border-radius: 10px;
+  color: #000;
+  font-size: 18px!important;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.addcertificate h3,
+.viewcertificate h3,.addservice h3,.viewservice h3,.view-enquiry h3 {
+   color: #085905;
+   text-shadow: 1px 10px 10px #c5ffbc;
+  
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.certificate p {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: justify;
+}
+.certificate p span {
+  color: #390e0e;
+  margin-left: 10px;
+}
+
+/* SERVICES */
+
+.service-hero {
+  height: 60vh;
+  width: 100%;
+  background-image: url(assets/service.jpg)!important;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.service-hero .overlay {
+  background: rgba(0, 100, 0, 0.5);
+  padding: 50px;
+  text-align: center;
+  border-radius: 10px;
+}
+.service-hero .overlay p{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+/*TERMS*/
+
+.terms-container {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.terms-box {
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  border: 2px solid #3b0008;
+}
+
+.terms-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #7e0b0b;
+  text-transform: uppercase;
+}
+
+.terms-box h3 {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #a31313;
+}
+
+.terms-box p,
+.terms-box li {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.terms-box ul {
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .terms-box {
+    padding: 25px;
+  }
+
+  .terms-title {
+    font-size: 26px;
+  }
+}
+
